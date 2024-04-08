@@ -3,12 +3,10 @@ CFLAGS=-g -O -pedantic -std=gnu17 -Wall -Werror -Wextra
 LDFLAGS=-lcrypto -lm
 
 .PHONY: all
-all: nyufile
+all: fileSystem
 
-nyuenc: nyufile.o
-
-nyuc.o: nyuc.c
+fileSystem: fileSystem.o
 
 .PHONY: clean
 clean:
-	rm -f *.o nyufile
+	rm -f *.o fileSystem
