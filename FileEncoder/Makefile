@@ -3,12 +3,10 @@ CFLAGS=-g -O -pedantic -std=gnu17 -Wall -Werror -Wextra
 LDFLAGS=-lm -pthread
 
 .PHONY: all
-all: nyuenc
+all: fileEncoder
 
-nyuenc: nyuenc.o
-
-nyuc.o: nyuc.c
+fileEncoder: fileEncoder.o
 
 .PHONY: clean
 clean:
-	rm -f *.o nyush
+	rm -f *.o fileEncoder
