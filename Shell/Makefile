@@ -2,12 +2,10 @@ CC=gcc
 CFLAGS=-g -pedantic -std=gnu17 -Wall -Werror -Wextra
 
 .PHONY: all
-all: nyush
+all: shell
 
-nyush: nyush.o
-
-nyuc.o: nyuc.c
+shell: shell.o
 
 .PHONY: clean
 clean:
-	rm -f *.o nyush
+	rm -f *.o shell
